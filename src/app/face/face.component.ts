@@ -31,4 +31,8 @@ export class FaceComponent implements OnInit {
       [faceString.charAt(6), faceString.charAt(7), faceString.charAt(8)],
     ];
   }
+
+  trackSticker(index: number, item: string) {
+    return index;
+  }
 }

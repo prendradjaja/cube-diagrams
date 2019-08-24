@@ -1,6 +1,6 @@
 <table>
   <tr *ngFor="let row of colors; let r = index">
-    <td *ngFor="let color of row; let c = index"
+    <td *ngFor="let color of row; let c = index; trackBy: trackSticker"
         data-is-sticker
         [attr.data-face-id]="id"
         [attr.data-row-index]="r"
