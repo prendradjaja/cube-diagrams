@@ -1,0 +1,10 @@
+<table>
+  <tr *ngFor="let row of colors; let r = index">
+    <td *ngFor="let color of row; let c = index"
+        data-is-sticker
+        [attr.data-face-id]="id"
+        [attr.data-row-index]="r"
+        [attr.data-col-index]="c"
+        [style.background-color]="colorService.abbrToColor(color)"></td>
+  </tr>
+</table>

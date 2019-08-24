@@ -1,0 +1,9 @@
+td {
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
