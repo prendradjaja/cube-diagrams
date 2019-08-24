@@ -7,7 +7,7 @@ export enum FaceId {
   front = "front",
   back = "back",
   left = "left",
-  right = "right"
+  right = "right",
 }
 
 interface Preset {
@@ -20,7 +20,7 @@ interface Preset {
 @Component({
   selector: "app-root",
   templateUrl: "./app.component.html",
-  styleUrls: ["./app.component.scss"]
+  styleUrls: ["./app.component.scss"],
 })
 export class AppComponent implements OnInit {
   imageUrl: string;
@@ -43,7 +43,7 @@ export class AppComponent implements OnInit {
     "3": "g",
     "'": "y",
     ",": "o",
-    ".": "b"
+    ".": "b",
   };
 
   presets: Preset[] = [
@@ -51,16 +51,16 @@ export class AppComponent implements OnInit {
       name: "First slot",
       faces: {
         front: "ddd drd drd",
-        right: "ddd dgd dgd"
-      }
+        right: "ddd dgd dgd",
+      },
     },
     {
       name: "Last slot",
       faces: {
         front: "ddd rrd rrd",
-        right: "ddd dgg dgg"
-      }
-    }
+        right: "ddd dgg dgg",
+      },
+    },
   ];
 
   public ngOnInit() {

@@ -3,7 +3,7 @@ import { Component, OnInit, Output, EventEmitter, Input } from "@angular/core";
 @Component({
   selector: "preset",
   templateUrl: "./preset.component.html",
-  styleUrls: ["./preset.component.scss"]
+  styleUrls: ["./preset.component.scss"],
 })
 export class PresetComponent implements OnInit {
   @Input()
